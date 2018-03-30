@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+}
+
+.foto {
+	margin: 0px auto;
+	border-radius: 100px;
+	border: 3px solid #00CED1;	
+	width: 150px;
+	height: 150px;	
+}
+
+.contorno_foto {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.coluna_esquerda {
+		background-color: #4169E1;
+	}
+
+.menu {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.botao_menu {
+	border: 2px solid white;
+	color: #4169E1;
+	font-family: open sans;
+	font-size: 20px;
+	padding: 5px;
+	margin: 10px 10px;
+	border-radius: 15px;
+}
+
+.conteudo {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	top: 0px;
+	margin-top: 0px;
+	height: 100%;
+}
+
+
+/*Tela Tablets e Celulares*/
+@media only screen and (max-width: 767px) {
+	.coluna_esquerda {
+		height: 530px;
+		background-color: #4169E1;
+	}
+}
+
+/*Tela cheia*/
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+	.coluna_esquerda {
+		float: left;
+		clear: left;
+		position: fixed;
+	    width: 25%;
+	    height: 100%;
+	 }
+
+	 .conteudo {
+	 	float: right;
+	 	clear: right;
+	 	position: relative;
+	 	width: 75%;
+	 }
+
+
+	.foto {
+		margin: 50px auto;
+	}
+
+	.redes_capa {
+		margin: 200px 0px;
+	}
+
+}
+
+.redes_capa {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.img_rede {
+	width: 50px;
+	height: 50px;
+	margin: 10px 10px;
+}
+
+.texto {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.texto a {
+	text-decoration: none;
+}
+
+.titulo {
+	font-family: open sans;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
+
+.subtitulo {
+	font-family: open sans;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 0px 0px;
+}
+
+.paragrafo {
+	font-family: open sans;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	margin: 10px 20px;
+}
+
+nav {
+	top: 0;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000080;
+	width: 100%;
+	height: 50px;
+	background-color: #0000CD;	
+}
+
+.post {
+	font-family: open sans;
+	padding: 10px;
+}
+
+.sobre {
+	font-family: open sans;
+	margin: 20px 30px;
+	text-align: justify;
+}
+
+h1 {
+	text-align: center;
+	font-family: open sans;
+
+}
+
+h3 {
+	padding-left: 10px;
+	font-family: open sans;
+	color: white;
+}
+
+hr {
+	margin: 10px;
+}
+
+p {
+	margin: 0px ;
+}
+
+.galeria_capa img {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -150px;
+	max-width: 90%; 
+	height: auto;
+
+}
+
+.galeria_capa {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+
+footer {
+	width: 100%;
+	height: 150px;
+	background-color: #0000CD;
+}
+
+.texto_rodape {
+	font-family: open sans;
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	margin: 100px 20px 0px 0px;
+}
