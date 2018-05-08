@@ -7,33 +7,7 @@
 	<title>Márlon Ramos - Blog</title>
 </head>
 <body>
-	<!--coluna da esquerda, apresentação-->
-	<div class="coluna_esquerda">
-		<!--Foto-->
-		<div class="contorno_foto">
-			<a href="index.html"><img src="img/m.jpg" class="foto" id="01"></a>
-		</div>
-
-		<!--Título e Subtítulo-->
-		<div class="texto"><a href="index.html"><h1 class="titulo" id="02">Márlon Ramos</h1></a></div>
-		<div class="texto"><a href="index.html"><h2 class="subtitulo" id="03">Desenvolvedor Web</h2></a></div>
-		<div class="texto"><p class="paragrafo" id="04">Entusiasta de programação e freelancer. Desenhista e guitarrista nas horas vagas.</p></div>
-
-		<!--Menu-->
-		<div class="menu">
-			<div class="botao_menu"><a href="blog.php" id="05">Blog</a></div>
-			<div class="botao_menu"><a href="sobre.php" id="06">Sobre</a></div>
-			<div class="botao_menu"><a href="contato.php" id="07">Contato</a></div>
-			<div class="botao_menu"><a href="Portfolio.php" id="08">Portfolio</a></div> 	
-		</div>
-
-		<!--Redes Sociais-->
-		<div class="redes_capa">
-			<a href="#"><img src="img/face2.jpg" alt="facebook" class="img_rede" id="09"></a>
-			<a href="#"><img src="img/git2.jpg" alt="Github"  class="img_rede" id="10"></a>
-			<a href="#"><img src="img/link2.jpg" alt="Linkedin" class="img_rede" id="11"></a>
-		</div>
-	</div>
+	<?php require ("coluna_esquerda.php"); ?>	
 
 	<!--coluna da direita, postagens-->
 	<div class="conteudo">
@@ -63,7 +37,12 @@
 
 								<br />
 
-								<p>" . $row ["texto"] . "</p>
+								<p>" . $row ["texto"] . "...</p>
+
+								<form action='post.php' method='post'>
+								    <input type='hidden' name='id' value=" . $row['id'] .">
+								    <input type='submit' name='deletar' value='Ver mais'/>
+								</form>		
 
 								<hr />
 							</div>";
@@ -76,9 +55,7 @@
 			?>
 		</div>
 
-		<footer>
-			<p class="texto_rodape">Desenvolvido por Márlon Ramos</p>
-	</footer>
+		<?php require ("rodape.php"); ?>
 	</div>
 
 

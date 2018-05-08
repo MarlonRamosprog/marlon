@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style_webmaster.css">
-	<title>Cadastro de postagem do blog</title>
+	<title></title>
 </head>
 <body>
 	<?php
@@ -25,30 +25,15 @@
 			expulsaVisitante();
 		}
 		*/
-		echo "<h1>Cadastro do Blog</h1>";
+		echo "<h1>Bem-vindo, Márlon Ramos.</h1>";
 	?>
 	<div class="menu">
-		<p>Registre sua postagem:</p>
-		<form form method="post"  enctype="multipart/form-data" action="ok_blog.php">
-	  		<label>Título <input type="text" name="titulo" value="" maxlength="50" /></label>
-
-	  		<br />
-
-	  		<label>Selecione uma imagem: <input name="arquivo" type="file"/></label>
-
-	  		<br />
-
-   			<label>Nome da imagem: <input type="text" name="nome_imagem" size: "50"></label>
-
-   			<br />
-	  
-	  		<label>Texto 
-		  		<textarea name="texto" maxlength="50000"/>
-		  		</textarea>
-		  	</label>
-	  
-	  		<input type="submit" value="Entrar" />
-		</form>
+		<p>O que você gostaria de fazer?</p>
+		<ul>
+			<li><a href="cadastro_blog.php">Cadastrar nova postagem para o blog</a></li>				
+			<li><a href="pedidos.php">Verificar pedidos de orçamento</a></li>
+			<li><a href="cadastro_portfolio.php">Cadastrar nova postagem para o blog</a></li>
+		</ul>
 	</div>	
 
 	<script type="text/javascript" src="main_webmaster.js"></script>
